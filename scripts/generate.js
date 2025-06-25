@@ -37,7 +37,7 @@ const schema = DEFAULT_SCHEMA.extend([withAlphaType]);
 const transformSoft = theme => {
     /** @type {Theme} */
     const soft = JSON.parse(JSON.stringify(theme));
-    const brightColors = [...soft.dracula.ansi, ...soft.dracula.brightOther];
+    const brightColors = soft.dracula.ansi;
     for (const key of Object.keys(soft.colors)) {
         if (brightColors.includes(soft.colors[key])) {
             soft.colors[key] = tinycolor(soft.colors[key])

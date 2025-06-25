@@ -35,9 +35,6 @@ dracula:
     - &COLOR13       '#FF92DF'
     - &COLOR14       '#A4FFFF'
     - &COLOR15       '#FFFFFF'
-  brightOther:
-    # Temporary (awaiting fix)
-    - &TEMP_PROPERTY_QUOTES '#8BE9FE'
   other:
     - &LineHighlight '#44475A75'
     - &NonText       '#FFFFFF1A'
@@ -991,7 +988,7 @@ tokenColors:
     - punctuation.support.type.property-name.begin
     - punctuation.support.type.property-name.end
     settings:
-      foreground: *TEMP_PROPERTY_QUOTES
+      foreground: *PURPLE
 
   - name: Docstrings
     scope:
