@@ -716,9 +716,14 @@ tokenColors:
   - name: Keywords
     scope:
     - keyword
+    settings:
+      foreground: *ORANGE
+
+  - name: Keywords punctuation
+    scope:
     - punctuation.definition.keyword
     settings:
-      foreground: *LG_PINK
+      foreground: *FG
 
   - name: Keyword "new"
     scope:
