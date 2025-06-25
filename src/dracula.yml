@@ -608,11 +608,16 @@ tokenColors:
   - name: Comments
     scope:
     - comment
-    - punctuation.definition.comment
     - unused.comment
     - wildcard.comment
     settings:
       foreground: *COMMENT
+
+  - name: Documentation
+    scope:
+    - comment.block.documentation
+    settings:
+      foreground: *GREEN
 
   - name: JSDoc-style keywords
     scope:
@@ -620,7 +625,8 @@ tokenColors:
     - comment.block.documentation keyword
     - comment.block.documentation storage.type.class
     settings:
-      foreground: *LG_PINK
+      foreground: *GREEN
+      fontStyle: bold
 
   - name: JSDoc-style types
     scope:
@@ -639,7 +645,7 @@ tokenColors:
     scope:
     - comment.block.documentation variable
     settings:
-      foreground: *LG_ORANGE
+      foreground: *FG
       fontStyle: italic
 
 # =============================================================================
