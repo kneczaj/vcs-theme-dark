@@ -15,6 +15,7 @@ dracula:
     - &LG_ORANGE    '#FFB86C'
     - &LG_PINK      '#FF79C6'
     - &LG_RED       '#FF5555'
+    - &RED          '#ad3e3b'
     - &PURPLE       '#c77ebb'
     - &GREEN        '#6aab73'
     - &ORANGE       '#cf8e6d'
@@ -1180,7 +1181,7 @@ tokenColors:
     scope:
       - log.error
     settings:
-      foreground: *LG_RED
+      foreground: *RED
       fontStyle: bold
 
   - name: Log file warning
