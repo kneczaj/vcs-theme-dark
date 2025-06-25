@@ -18,6 +18,7 @@ dracula:
     - &PURPLE       '#c77ebb'
     - &GREEN        '#6aab73'
     - &ORANGE       '#cf8e6d'
+    - &BLUE         '#56a8f5'
   ansi:
     - &COLOR0        '#21222C'
     - &COLOR1        '#FF5555'
@@ -681,7 +682,7 @@ tokenColors:
     - support.function.any-method.lua
     - keyword.operator.function.infix
     settings:
-      foreground: *LG_GREEN
+      foreground: *BLUE
 
   - name: Function parameters
     scope:
