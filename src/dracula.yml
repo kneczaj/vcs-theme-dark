@@ -25,6 +25,7 @@ dracula:
     - &BLACK        '#000000'
     - &CYAN         '#2fbaa3'
     - &YELLOW       '#d5b778'
+    - &LINK         '#56a8f5'
   ansi:
     - &COLOR0        '#21222C'
     - &COLOR1        '#FF5555'
@@ -507,7 +508,7 @@ tokenColors:
     - markup.underline.link
     - markup.underline.link.image
     settings:
-      foreground: *PURPLE
+      foreground: *LINK
 
   - name: Link text, image alt text (prose)
     scope:
