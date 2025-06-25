@@ -19,7 +19,6 @@ dracula:
     - &BLUE_LIGHT   '#2aacb8'
     - &DARK_GREEN   '#507874'
     - &WARNING      '#f2c55c'
-    - &BLACK        '#000000'
     - &CYAN         '#2fbaa3'
     - &YELLOW       '#d5b778'
     - &LINK         '#56a8f5'
