@@ -828,7 +828,7 @@ tokenColors:
     - punctuation.section.embedded.end source.ruby # Issue with ruby's tmLanguage
     - punctuation.definition.variable.makefile
     settings:
-      foreground: *LG_PINK
+      foreground: *FG
 
 # =============================================================================
 # Serializable / Config Langages
