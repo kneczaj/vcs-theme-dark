@@ -734,6 +734,7 @@ tokenColors:
     - keyword.operator.new
     settings:
       fontStyle: bold
+      foreground: *ORANGE
 
   - name: Generic selectors (CSS/SCSS/Less/Stylus)
     scope:
