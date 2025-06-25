@@ -1,8 +1,8 @@
 $schema: vscode://schemas/color-theme
-name: Dracula
-author: Zeno Rocha
+name: Dracula2
+author: Zeno Rocha, Kamil Neczaj
 maintainers:
-  - Derek P Sifford <dereksifford@gmail.com>
+  - Kamil Neczaj <kneczaj@gmail.com>
 semanticClass: theme.dracula
 semanticHighlighting: true
 dracula:
