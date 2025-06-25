@@ -20,6 +20,7 @@ dracula:
     - &ORANGE       '#cf8e6d'
     - &BLUE         '#56a8f5'
     - &DARK_GREEN   '#507874'
+    - &WARNING      '#f2c55c'
     - &BLACK        '#000000'
   ansi:
     - &COLOR0        '#21222C'
@@ -246,7 +247,7 @@ colors:
 
   editorError.foreground: *LG_RED                                                  # Foreground color of error squigglies in the editor
   editorError.border:                                                           # Border color of error squigglies in the editor
-  editorWarning.foreground: *PURPLE                                               # Foreground color of warning squigglies in the editor
+  editorWarning.foreground: *WARNING                                               # Foreground color of warning squigglies in the editor
   editorWarning.border:                                                         # Border color of warning squigglies in the editor
 
   editorGutter.background:                                                      # Background color of the editor gutter
