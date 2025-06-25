@@ -669,8 +669,7 @@ tokenColors:
     scope:
     - entity.other.attribute-name
     settings:
-      foreground: *LG_GREEN
-      fontStyle: italic
+      foreground: *FG
 
 # =============================================================================
 # Functions/Methods
