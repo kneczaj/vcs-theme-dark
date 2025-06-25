@@ -913,12 +913,6 @@ tokenColors:
     settings:
       foreground: *DARK_GREEN
 
-  - name: Modifiers
-    scope:
-    - storage.modifier
-    settings:
-      foreground: *LG_PINK
-
 # =============================================================================
 # RegExp
 # =============================================================================
