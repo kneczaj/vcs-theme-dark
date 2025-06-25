@@ -755,6 +755,12 @@ tokenColors:
     - support.function.magic
     - support.variable
     - variable.other.predefined
+    settings:
+      fontStyle: italic
+      foreground: *PURPLE
+
+  - name: Built-in magic functions and constants
+    scope:
     - support.type.builtin
     - support.type.primitive
     settings:
@@ -1019,8 +1025,11 @@ tokenColors:
     - variable.other.property
     - support.variable.property
     - constant.other.key.perl     # Perl edge case
+    - support.variable.property
     settings:
       foreground: *PURPLE
+      # overwrites italic for the built-ins
+      fontStyle: 'normal'
 
   - name: Destructuring / aliasing reference name (LHS)
     scope:
