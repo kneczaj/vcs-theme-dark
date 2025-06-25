@@ -746,13 +746,15 @@ tokenColors:
     scope:
     - support
     settings:
-      foreground: *ORANGE
+      foreground: *PURPLE
+      fontStyle: 'italic'
 
   - name: Built-in magic functions and constants
     scope:
     - support.function.magic
     - support.variable
     - variable.other.predefined
+    - support.type.primitive.ts
     settings:
       fontStyle: regular
       foreground: *ORANGE
