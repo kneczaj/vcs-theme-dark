@@ -19,6 +19,7 @@ dracula:
     - &GREEN        '#6aab73'
     - &ORANGE       '#cf8e6d'
     - &BLUE         '#56a8f5'
+    - &BLUE_LIGHT   '#2aacb8'
     - &DARK_GREEN   '#507874'
     - &WARNING      '#f2c55c'
     - &BLACK        '#000000'
@@ -640,6 +641,12 @@ tokenColors:
     - variable.other.constant
     settings:
       foreground: *FG
+
+  - name: Decimals
+    scope:
+    - constant.numeric.decimal
+    settings:
+      foreground: *BLUE_LIGHT
 
   - name: Constant escape sequences
     scope:
