@@ -959,7 +959,6 @@ tokenColors:
     scope:
     - string.regexp
     - constant.other.character-class.set.regexp
-    - constant.character.escape.backslash.regexp
     settings:
       foreground: *GREEN
 
