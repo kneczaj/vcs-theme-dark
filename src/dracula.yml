@@ -11,7 +11,7 @@ dracula:
     - &FG        '#bcbec4'
     - &SELECTION '#44475A'
     - &COMMENT   '#7a7e85'
-    - &RED          '#ad3e3b'
+    - &RED          '#db5c5c'
     - &PURPLE       '#c77ebb'
     - &GREEN        '#6aab73'
     - &ORANGE       '#cf8e6d'
