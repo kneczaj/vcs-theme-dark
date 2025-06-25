@@ -20,6 +20,7 @@ dracula:
     - &ORANGE       '#cf8e6d'
     - &BLUE         '#56a8f5'
     - &DARK_GREEN   '#507874'
+    - &BLACK        '#000000'
   ansi:
     - &COLOR0        '#21222C'
     - &COLOR1        '#FF5555'
