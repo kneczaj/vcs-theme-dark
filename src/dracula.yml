@@ -744,7 +744,7 @@ tokenColors:
 
   - name: Language Built-ins
     scope:
-    - support
+    - support.class
     settings:
       foreground: *PURPLE
       fontStyle: 'italic'
@@ -754,7 +754,7 @@ tokenColors:
     - support.function.magic
     - support.variable
     - variable.other.predefined
-    - support.type.primitive.ts
+    - support.type.builtin
     settings:
       fontStyle: regular
       foreground: *ORANGE
@@ -900,8 +900,7 @@ tokenColors:
     - storage.type.haskell
     - storage.type.ocaml
     settings:
-      fontStyle: italic
-      foreground: *PURPLE
+      foreground: *FG
 
   - name: Generics, templates, and mapped type declarations
     scope:
