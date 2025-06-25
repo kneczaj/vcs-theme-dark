@@ -756,6 +756,7 @@ tokenColors:
     - support.variable
     - variable.other.predefined
     - support.type.builtin
+    - support.type.primitive
     settings:
       fontStyle: regular
       foreground: *ORANGE
