@@ -513,8 +513,9 @@ tokenColors:
     - punctuation.definition.directive.restructuredtext
     - string.other.link.description
     - string.other.link.title
+    - punctuation.definition.link.title
     settings:
-      foreground: *LG_PINK
+      foreground: *ORANGE
 
   - name: Blockquotes (prose)
     scope:
