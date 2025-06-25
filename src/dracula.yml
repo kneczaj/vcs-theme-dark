@@ -8,7 +8,7 @@ semanticHighlighting: true
 dracula:
   base:
     - &BG        '#282A36'
-    - &FG        '#F8F8F2'
+    - &FG        '#bcbec4'
     - &SELECTION '#44475A'
     - &COMMENT   '#6272A4'
     - &LG_GREEN     '#50FA7B'
@@ -26,7 +26,7 @@ dracula:
     - &COLOR4        '#cf8e6d'
     - &COLOR5        '#FF79C6'
     - &COLOR6        '#8BE9FD'
-    - &COLOR7        '#F8F8F2'
+    - &COLOR7        '#bcbec4'
     - &COLOR8        '#6272A4'
     - &COLOR9        '#FF6E6E'
     - &COLOR10       '#69FF94'
