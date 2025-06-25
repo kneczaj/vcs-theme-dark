@@ -740,8 +740,7 @@ tokenColors:
     scope:
     - support
     settings:
-      fontStyle: italic
-      foreground: *PURPLE
+      foreground: *ORANGE
 
   - name: Built-in magic functions and constants
     scope:
