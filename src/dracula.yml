@@ -11,7 +11,6 @@ dracula:
     - &FG        '#bcbec4'
     - &SELECTION '#44475A'
     - &COMMENT   '#7a7e85'
-    - &LG_ORANGE    '#FFB86C'
     - &LG_PINK      '#FF79C6'
     - &RED          '#ad3e3b'
     - &PURPLE       '#c77ebb'
@@ -113,7 +112,7 @@ colors:
   inputValidation.infoBorder: *LG_PINK                                             # Input validation border color for information severity
   inputValidation.warningForeground:                                            # Input validation foreground color for warning severity
   inputValidation.warningBackground:                                            # Input validation background color for information warning
-  inputValidation.warningBorder: *LG_ORANGE                                        # Input validation border color for warning severity
+  inputValidation.warningBorder: *ORANGE                                        # Input validation border color for warning severity
   inputValidation.errorForeground:                                              # Input validation foreground color for error severity
   inputValidation.errorBackground:                                              # Input validation background color for error severity
   inputValidation.errorBorder: *RED                                             # Input validation border color for error severity
@@ -140,7 +139,7 @@ colors:
   list.hoverBackground: *LineHighlight                                          # List/Tree background when hovering over items using the mouse
   list.inactiveSelectionBackground: *LineHighlight                              # List/Tree background color for the selected item when the list/tree is inactive
   list.inactiveSelectionForeground:                                             # List/Tree foreground color for the selected item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not
-  list.warningForeground: *LG_ORANGE                                               # Color of warning decorations in the explorer
+  list.warningForeground: *ORANGE                                               # Color of warning decorations in the explorer
   list.errorForeground: *RED                                                    # Color of error decorations in the explorer
   list.hoverForeground:                                                         # List/Tree foreground when hovering over items using the mouse
   list.focusForeground:                                                         # List/Tree foreground color for the focused item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not
@@ -197,7 +196,7 @@ colors:
   editor.wordHighlightBackground: !alpha [ *PURPLE, 50 ]                          # Background color of a symbol during read-access, for example when reading a variable
   editor.wordHighlightStrongBackground: !alpha [ *GREEN, 50 ]                   # Background color of a symbol during write-access, for example when writing to a variable
 
-  editor.findMatchBackground: !alpha [ *LG_ORANGE, 80 ]
+  editor.findMatchBackground: !alpha [ *ORANGE, 80 ]
   editor.findMatchHighlightBackground: !alpha [ *WHITE, 40 ]                    # Color of the other search matches
   editor.findRangeHighlightBackground: *LineHighlight                           # Color the range limiting the search
 
@@ -238,14 +237,14 @@ colors:
   editorOverviewRuler.border: *BGDarker                                         # Color of the overview ruler border
   editorOverviewRuler.findMatchForeground:
   editorOverviewRuler.rangeHighlightForeground:
-  editorOverviewRuler.selectionHighlightForeground: *LG_ORANGE
+  editorOverviewRuler.selectionHighlightForeground: *ORANGE
   editorOverviewRuler.wordHighlightForeground: *PURPLE
   editorOverviewRuler.wordHighlightStrongForeground: *GREEN
   editorOverviewRuler.modifiedForeground: !alpha [ *PURPLE, 80 ]
   editorOverviewRuler.addedForeground:    !alpha [ *GREEN,  80 ]
   editorOverviewRuler.deletedForeground:  !alpha [ *RED,    80 ]
   editorOverviewRuler.errorForeground:    !alpha [ *RED,    80 ]
-  editorOverviewRuler.warningForeground:  !alpha [ *LG_ORANGE, 80 ]
+  editorOverviewRuler.warningForeground:  !alpha [ *ORANGE, 80 ]
   editorOverviewRuler.infoForeground:     !alpha [ *PURPLE,   80 ]
 
   editorError.foreground: *RED                                                  # Foreground color of error squigglies in the editor
@@ -263,7 +262,7 @@ colors:
   gitDecoration.deletedResourceForeground: *RED
   gitDecoration.untrackedResourceForeground: *GREEN
   gitDecoration.ignoredResourceForeground: *COMMENT
-  gitDecoration.conflictingResourceForeground: *LG_ORANGE
+  gitDecoration.conflictingResourceForeground: *ORANGE
 
   # Diff Editor Colors
   diffEditor.insertedTextBackground: !alpha [ *GREEN, 20 ]                      # Background color for inserted text
@@ -333,7 +332,7 @@ colors:
   statusBarItem.activeBackground:                                               # Status Bar item background color when clicking
   statusBarItem.hoverBackground:                                                # Status Bar item background color when hovering
   statusBarItem.prominentBackground: *RED                                       # Status Bar prominent items background color. Prominent items stand out from other Status Bar entries to indicate importance
-  statusBarItem.prominentHoverBackground: *LG_ORANGE                               # Status Bar prominent items background color when hovering. Prominent items stand out from other Status Bar entries to indicate importance
+  statusBarItem.prominentHoverBackground: *ORANGE                               # Status Bar prominent items background color when hovering. Prominent items stand out from other Status Bar entries to indicate importance
   statusBarItem.remoteForeground: *BG                                           # Background color for the remote indicator on the status bar
   statusBarItem.remoteBackground: *ORANGE                                       # Foreground color for the remote indicator on the status bar
   statusBar.border:
@@ -363,7 +362,7 @@ colors:
 
   # Setting Editor
   settings.headerForeground:           *FG                                      # The foreground color for a section header or active title
-  settings.modifiedItemIndicator:      *LG_ORANGE                                  # The color of the line that indicates a modified setting
+  settings.modifiedItemIndicator:      *ORANGE                                  # The color of the line that indicates a modified setting
   settings.inactiveSelectedItemBorder:                                          # The color of the selected setting row border, when the settings list does not have focus
   settings.dropdownBackground:         *BGDark                                  # Dropdown background
   settings.dropdownForeground:         *FG                                      # Dropdown foreground
@@ -429,7 +428,7 @@ tokenColors:
   - scope:
     - markup.changed
     settings:
-      foreground: *LG_ORANGE
+      foreground: *ORANGE
   - scope:
     - invalid
     settings:
@@ -913,7 +912,7 @@ tokenColors:
     - constant.other.date
     - constant.other.timestamp
     settings:
-      foreground: *LG_ORANGE
+      foreground: *ORANGE
 
   - name: YAML aliases
     scope:
@@ -1004,7 +1003,7 @@ tokenColors:
     scope:
     - punctuation.definition.group.regexp
     settings:
-      foreground: *LG_ORANGE
+      foreground: *ORANGE
 
   - name: Assertion operators
     scope:
@@ -1085,7 +1084,7 @@ tokenColors:
     - meta.variable.assignment.destructured.object.coffee variable  # Object destructuring property (coffeescript)
     settings:
       fontStyle: italic
-      foreground: *LG_ORANGE
+      foreground: *ORANGE
 
   - name: Destructuring / aliasing variable name (RHS)
     scope:
