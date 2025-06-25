@@ -645,7 +645,7 @@ tokenColors:
     - constant.character.string.escape
     - constant.regexp
     settings:
-      foreground: *LG_PINK
+      foreground: *ORANGE
 
 # =============================================================================
 # Entities
