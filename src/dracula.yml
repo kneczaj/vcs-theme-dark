@@ -45,10 +45,10 @@ dracula:
     - &WHITE         '#FFFFFF'
     - &TAB_DROP_BG   '#44475A70'
     # UI Variants
-    - &BGLighter     '#424450'
-    - &BGLight       '#343746' # HSV (230   , 25.71, 27.45)
-    - &BGDark        '#21222C' # HSV (234.55, 25   , 17.25)
-    - &BGDarker      '#191A21' # HSV (234.55, 25   , 13   )
+    - &BGLighter     '#424450' # hsl(210deg 5% 30%)
+    - &BGLight       '#343746' # hsl(216deg 5% 24%)
+    - &BGDark        '#2b2d30' # hsl(216deg 5% 18%)
+    - &BGDarker      '#18191b' # hsl(216deg 6% 10%)
 
 # User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
 colors:
