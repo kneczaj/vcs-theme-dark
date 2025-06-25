@@ -498,7 +498,7 @@ tokenColors:
     - markup.inline.raw
     - markup.raw.restructuredtext
     settings:
-      foreground: *LG_GREEN
+      foreground: *GREEN
 
   - name: Links (prose)
     scope:
