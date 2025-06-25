@@ -633,7 +633,7 @@ tokenColors:
     - constant
     - variable.other.constant
     settings:
-      foreground: *ORANGE
+      foreground: *FG
 
   - name: Constant escape sequences
     scope:
