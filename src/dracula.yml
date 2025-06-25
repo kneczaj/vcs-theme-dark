@@ -14,7 +14,6 @@ dracula:
     - &LG_GREEN     '#50FA7B'
     - &LG_ORANGE    '#FFB86C'
     - &LG_PINK      '#FF79C6'
-    - &LG_RED       '#FF5555'
     - &RED          '#ad3e3b'
     - &PURPLE       '#c77ebb'
     - &GREEN        '#6aab73'
@@ -29,7 +28,7 @@ dracula:
     - &LINK         '#56a8f5'
   ansi:
     - &COLOR0        '#21222C'
-    - &COLOR1        '#FF5555'
+    - &COLOR1        '#ad3e3b'
     - &COLOR2        '#6aab73'
     - &COLOR3        '#F1FA8C'
     - &COLOR4        '#cf8e6d'
@@ -87,7 +86,7 @@ colors:
   foreground: *FG                                                               # Overall foreground color. This color is only used if not overridden by a component
   widget.shadow:                                                                # Shadow color of widgets such as Find/Replace inside the editor
   selection.background: *ORANGE                                                 # Background color of text selections in the workbench (for input fields or text areas, does not apply to selections within the editor and the terminal)
-  errorForeground: *LG_RED                                                         # Overall foreground color for error messages (this color is only used if not overridden by a component)
+  errorForeground: *RED                                                         # Overall foreground color for error messages (this color is only used if not overridden by a component)
 
   # Button Control
   button.background: *SELECTION                                                 # Button background color
@@ -118,7 +117,7 @@ colors:
   inputValidation.warningBorder: *LG_ORANGE                                        # Input validation border color for warning severity
   inputValidation.errorForeground:                                              # Input validation foreground color for error severity
   inputValidation.errorBackground:                                              # Input validation background color for error severity
-  inputValidation.errorBorder: *LG_RED                                             # Input validation border color for error severity
+  inputValidation.errorBorder: *RED                                             # Input validation border color for error severity
 
   # Scroll Bar Control
   scrollbar.shadow:                                                             # Scroll Bar shadow to indicate that the view is scrolled
@@ -143,7 +142,7 @@ colors:
   list.inactiveSelectionBackground: *LineHighlight                              # List/Tree background color for the selected item when the list/tree is inactive
   list.inactiveSelectionForeground:                                             # List/Tree foreground color for the selected item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not
   list.warningForeground: *LG_ORANGE                                               # Color of warning decorations in the explorer
-  list.errorForeground: *LG_RED                                                    # Color of error decorations in the explorer
+  list.errorForeground: *RED                                                    # Color of error decorations in the explorer
   list.hoverForeground:                                                         # List/Tree foreground when hovering over items using the mouse
   list.focusForeground:                                                         # List/Tree foreground color for the focused item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not
 
@@ -235,7 +234,7 @@ colors:
   editorBracketHighlight.foreground4: *FG                                    # Color of fourth pair of brackets
   editorBracketHighlight.foreground5: *FG                                   # Color of fifth pair of brackets
   editorBracketHighlight.foreground6: *FG                                   # Color of sixth pair of brackets
-  editorBracketHighlight.unexpectedBracket.foreground: *LG_RED                     # Color of bracket matching error
+  editorBracketHighlight.unexpectedBracket.foreground: *RED                     # Color of bracket matching error
 
   editorOverviewRuler.border: *BGDarker                                         # Color of the overview ruler border
   editorOverviewRuler.findMatchForeground:
@@ -245,12 +244,12 @@ colors:
   editorOverviewRuler.wordHighlightStrongForeground: *LG_GREEN
   editorOverviewRuler.modifiedForeground: !alpha [ *PURPLE, 80 ]
   editorOverviewRuler.addedForeground:    !alpha [ *LG_GREEN,  80 ]
-  editorOverviewRuler.deletedForeground:  !alpha [ *LG_RED,    80 ]
-  editorOverviewRuler.errorForeground:    !alpha [ *LG_RED,    80 ]
+  editorOverviewRuler.deletedForeground:  !alpha [ *RED,    80 ]
+  editorOverviewRuler.errorForeground:    !alpha [ *RED,    80 ]
   editorOverviewRuler.warningForeground:  !alpha [ *LG_ORANGE, 80 ]
   editorOverviewRuler.infoForeground:     !alpha [ *PURPLE,   80 ]
 
-  editorError.foreground: *LG_RED                                                  # Foreground color of error squigglies in the editor
+  editorError.foreground: *RED                                                  # Foreground color of error squigglies in the editor
   editorError.border:                                                           # Border color of error squigglies in the editor
   editorWarning.foreground: *WARNING                                               # Foreground color of warning squigglies in the editor
   editorWarning.border:                                                         # Border color of warning squigglies in the editor
@@ -258,11 +257,11 @@ colors:
   editorGutter.background:                                                      # Background color of the editor gutter
   editorGutter.modifiedBackground: !alpha [ *PURPLE, 80 ]                         # Editor gutter background color for lines that are modified
   editorGutter.addedBackground:    !alpha [ *LG_GREEN,  80 ]                       # Editor gutter background color for lines that are added
-  editorGutter.deletedBackground:  !alpha [ *LG_RED,    80 ]                       # Editor gutter background color for lines that are deleted
+  editorGutter.deletedBackground:  !alpha [ *RED,    80 ]                       # Editor gutter background color for lines that are deleted
 
   # Explorer Colors
   gitDecoration.modifiedResourceForeground: *PURPLE
-  gitDecoration.deletedResourceForeground: *LG_RED
+  gitDecoration.deletedResourceForeground: *RED
   gitDecoration.untrackedResourceForeground: *LG_GREEN
   gitDecoration.ignoredResourceForeground: *COMMENT
   gitDecoration.conflictingResourceForeground: *LG_ORANGE
@@ -270,7 +269,7 @@ colors:
   # Diff Editor Colors
   diffEditor.insertedTextBackground: !alpha [ *LG_GREEN, 20 ]                      # Background color for inserted text
   diffEditor.insertedTextBorder:                                                # Outline color for inserted text
-  diffEditor.removedTextBackground: !alpha [ *LG_RED, 50 ]                         # Background color for removed text
+  diffEditor.removedTextBackground: !alpha [ *RED, 50 ]                         # Background color for removed text
   diffEditor.removedTextBorder:                                                 # Outline color for removed text
   inlineChat.regionHighlight: *BGLight                                          # Background color for the inline chat diff region
 
@@ -328,13 +327,13 @@ colors:
   # Status Bar Colors
   statusBar.background: *BGDarker                                               # Standard Status Bar background color
   statusBar.foreground: *FG                                                     # Status Bar foreground color
-  statusBar.debuggingBackground: *LG_RED                                           # Status Bar background color when a program is being debugged
+  statusBar.debuggingBackground: *RED                                           # Status Bar background color when a program is being debugged
   statusBar.debuggingForeground: *BGDarker                                      # Status Bar foreground color when a program is being debugged
   statusBar.noFolderBackground: *BGDarker                                       # Status Bar foreground color when no folder is opened
   statusBar.noFolderForeground: *FG                                             # Status Bar background color when no folder is opened
   statusBarItem.activeBackground:                                               # Status Bar item background color when clicking
   statusBarItem.hoverBackground:                                                # Status Bar item background color when hovering
-  statusBarItem.prominentBackground: *LG_RED                                       # Status Bar prominent items background color. Prominent items stand out from other Status Bar entries to indicate importance
+  statusBarItem.prominentBackground: *RED                                       # Status Bar prominent items background color. Prominent items stand out from other Status Bar entries to indicate importance
   statusBarItem.prominentHoverBackground: *LG_ORANGE                               # Status Bar prominent items background color when hovering. Prominent items stand out from other Status Bar entries to indicate importance
   statusBarItem.remoteForeground: *BG                                           # Background color for the remote indicator on the status bar
   statusBarItem.remoteBackground: *ORANGE                                       # Foreground color for the remote indicator on the status bar
@@ -391,7 +390,7 @@ colors:
   menu.separatorBackground:                                                     # Color of a separator menu item in menus
   listFilterWidget.background: *BGLight                                         # Background color of the type filter widget in lists and trees.
   listFilterWidget.outline: *BGLighter                                          # Outline color of the type filter widget in lists and trees.
-  listFilterWidget.noMatchesOutline: *LG_RED                                       # Outline color of the type filter widget in lists and trees, when there are no matches.
+  listFilterWidget.noMatchesOutline: *RED                                       # Outline color of the type filter widget in lists and trees, when there are no matches.
 
 # Syntaxes
 tokenColors:
@@ -427,7 +426,7 @@ tokenColors:
   - scope:
     - markup.deleted
     settings:
-      foreground: *LG_RED
+      foreground: *RED
   - scope:
     - markup.changed
     settings:
@@ -435,7 +434,7 @@ tokenColors:
   - scope:
     - invalid
     settings:
-      foreground: *LG_RED
+      foreground: *RED
       fontStyle: underline italic
   - scope:
     - invalid.deprecated
@@ -449,7 +448,7 @@ tokenColors:
   - scope:
     - markup.error
     settings:
-      foreground: *LG_RED
+      foreground: *RED
 
   # Markdown / RST / Prose
   # ======================
@@ -1013,7 +1012,7 @@ tokenColors:
     - punctuation.definition.group.assertion.regexp
     - keyword.operator.negation.regexp
     settings:
-      foreground: *LG_RED
+      foreground: *RED
 
   - name: Positive lookaheads
     scope:
