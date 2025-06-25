@@ -8,6 +8,7 @@
     "license": "MIT",
     "scripts": {
         "build": "node ./scripts/build.js",
+        "build:watch": "nodemon --watch ./src/* ./scripts/build.js",
         "lint": "node ./scripts/lint.js",
         "package": "vsce package -o ./bin/dracula.vsix",
         "vscode:prepublish": "npm run build",
@@ -66,6 +67,7 @@
     },
     "devDependencies": {
         "js-yaml": "^4.1.0",
+        "nodemon": "^3.1.10",
         "prettier": "^3.0.0",
         "tinycolor2": "^1.6.0",
         "vsce": "^2.15.0"
