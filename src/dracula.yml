@@ -1098,6 +1098,13 @@ tokenColors:
       fontStyle: normal
       foreground: *FG
 
+  - name: Enums
+    scope:
+    - variable.other.enummember
+    settings:
+      fontStyle: italic
+      foreground: *PURPLE
+
 # =============================================================================
 # Language Extensions / Edge Cases
 # =============================================================================
