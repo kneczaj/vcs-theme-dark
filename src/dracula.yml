@@ -1007,21 +1007,22 @@ tokenColors:
 # Variables
 # =============================================================================
 
-  - name: Variables and object properties
+  - name: Variables
     scope:
     - variable
-    - constant.other.key.perl     # Perl edge case
-    settings:
-      foreground: *PURPLE
-
-  - name: Variables and object properties
-    scope:
-    - support.variable.property   # Object properties
     - variable.other.constant.js  # Fix incorrect highlighting of pseudo-constants in js, jsx
     - variable.other.constant.ts  # Fixes incorrect highlighting of pseudo-constants in ts
     - variable.other.constant.tsx # Fixes incorrect highlighting of pseudo-constants in tsx
     settings:
       foreground: *FG
+
+  - name: Object properties
+    scope:
+    - variable.other.property
+    - support.variable.property
+    - constant.other.key.perl     # Perl edge case
+    settings:
+      foreground: *PURPLE
 
   - name: Destructuring / aliasing reference name (LHS)
     scope:
