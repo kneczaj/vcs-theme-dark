@@ -19,6 +19,7 @@ dracula:
     - &GREEN        '#6aab73'
     - &ORANGE       '#cf8e6d'
     - &BLUE         '#56a8f5'
+    - &DARK_GREEN   '#507874'
   ansi:
     - &COLOR0        '#21222C'
     - &COLOR1        '#FF5555'
@@ -904,11 +905,12 @@ tokenColors:
 
   - name: Generics, templates, and mapped type declarations
     scope:
+    - entity.name.type.parameter
     - entity.name.type.type-parameter
     - meta.indexer.mappedtype.declaration entity.name.type # Mapped type declarations
     - meta.type.parameters entity.name.type                # Generic type declarations
     settings:
-      foreground: *LG_ORANGE
+      foreground: *DARK_GREEN
 
   - name: Modifiers
     scope:
