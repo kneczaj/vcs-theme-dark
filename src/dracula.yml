@@ -975,7 +975,7 @@ tokenColors:
     - string.regexp punctuation.definition.string.begin
     - string.regexp punctuation.definition.string.end
     settings:
-      foreground: *LG_RED
+      foreground: *CYAN
 
   - name: Character group
     scope:
