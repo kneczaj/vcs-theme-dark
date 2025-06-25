@@ -10,7 +10,7 @@ All instructions can be found at [draculatheme.com/visual-studio-code](https://d
 
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/kneczaj/vcs-theme-dark/graphs/contributors).
 
-[![Kamil N.](https://avatars.githubusercontent.com/u/4245137)](https://github.com/kneczaj) |
+[![Kamil N.](https://avatars.githubusercontent.com/u/4245137?v=3&s=70)](https://github.com/kneczaj) |
 :---: |
 [Kamil N.](https://github.com/kneczaj) |
 
