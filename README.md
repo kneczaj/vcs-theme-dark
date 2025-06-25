@@ -1,8 +1,6 @@
-# Dracula for [Visual Studio Code](http://code.visualstudio.com)
+# Dark Theme by KNeczaj for [Visual Studio Code](http://code.visualstudio.com)
 
 > A dark theme for [Visual Studio Code](http://code.visualstudio.com).
-
-![Screenshot](https://raw.githubusercontent.com/dracula/visual-studio-code/master/screenshot.png)
 
 ## Install
 
@@ -10,25 +8,15 @@ All instructions can be found at [draculatheme.com/visual-studio-code](https://d
 
 ## Team
 
-This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/visual-studio-code/graphs/contributors).
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/kneczaj/vcs-theme-dark/graphs/contributors).
 
-[![Derek S.](https://avatars3.githubusercontent.com/u/5240018?v=3&s=70)](https://github.com/dsifford) |
+[![Kamil N.](https://avatars.githubusercontent.com/u/4245137)](https://github.com/kneczaj) |
 :---: |
-[Derek S.](https://github.com/dsifford) |
-
-## Community
-
-* [Twitter](https://twitter.com/draculatheme) - Best for getting updates about themes and new stuff.
-* [GitHub](https://github.com/dracula/dracula-theme/discussions) - Best for asking questions and discussing issues.
-* [Discord](https://draculatheme.com/discord-invite) - Best for hanging out with the community.
+[Kamil N.](https://github.com/kneczaj) |
 
 ## Contributing
 
 If you'd like to contribute to this theme, please read the [contributing guidelines](./.github/CONTRIBUTING.md).
-
-## Dracula PRO
-
-[![Dracula PRO](./dracula-pro.png)](https://draculatheme.com/pro)
 
 ## License
 
