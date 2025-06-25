@@ -777,6 +777,7 @@ tokenColors:
     - support.type.property-name
     settings:
       fontStyle: regular
+      foreground: *PURPLE
 
 # =============================================================================
 # Punctuation
