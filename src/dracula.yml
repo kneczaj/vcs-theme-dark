@@ -809,7 +809,7 @@ tokenColors:
     - support.other.chomping-indicator.yaml
     - punctuation.separator.annotation
     settings:
-      foreground: *LG_PINK
+      foreground: *FG
 
   - name: Brackets, braces, parens, etc.
     scope:
