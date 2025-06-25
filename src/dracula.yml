@@ -828,6 +828,7 @@ tokenColors:
     - storage.type.generic.java
     - string.template meta.brace
     - string.template punctuation.accessor
+    - storage.type.function.arrow
     settings:
       foreground: *FG
 
