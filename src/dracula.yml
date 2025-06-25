@@ -37,7 +37,6 @@ dracula:
     - &COLOR15       '#FFFFFF'
   brightOther:
     # Temporary (awaiting fix)
-    - &TEMP_QUOTES          '#E9F284'
     - &TEMP_PROPERTY_QUOTES '#8BE9FE'
   other:
     - &LineHighlight '#44475A75'
@@ -984,7 +983,7 @@ tokenColors:
     - punctuation.definition.string.begin
     - punctuation.definition.string.end
     settings:
-      foreground: *TEMP_QUOTES
+      foreground: *GREEN
 
   - name: Property quotes (temporary vscode fix)
     scope:
