@@ -781,7 +781,8 @@ tokenColors:
 
   - name: 'Tags'
     scope:
-    - meta.tag
+    - punctuation.definition.tag.begin
+    - punctuation.definition.tag.end
     settings:
       foreground: *YELLOW
 
