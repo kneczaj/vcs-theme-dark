@@ -423,7 +423,7 @@ tokenColors:
   - scope:
     - markup.inserted
     settings:
-      foreground: *LG_GREEN
+      foreground: *GREEN
   - scope:
     - markup.deleted
     settings:
@@ -1201,5 +1201,5 @@ tokenColors:
     scope:
       - log.warning
     settings:
-      foreground: *GREEN
+      foreground: *WARNING
       fontStyle: bold
