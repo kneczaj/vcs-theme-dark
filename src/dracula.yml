@@ -661,7 +661,7 @@ tokenColors:
 
   - name: Decimals
     scope:
-    - constant.numeric.decimal
+    - constant.numeric
     - keyword.operator.quantifier.regexp
     settings:
       foreground: *BLUE_LIGHT
