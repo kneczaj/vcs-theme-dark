@@ -811,8 +811,8 @@ tokenColors:
 
   - name: Brackets, braces, parens, etc.
     scope:
+    - keyword.operator
     - keyword.operator.other.powershell # Commas
-    - keyword.operator.assignment
     - keyword.other.statement-separator.powershell
     - meta.brace.round
     - meta.function-call punctuation
