@@ -11,7 +11,6 @@ dracula:
     - &FG        '#bcbec4'
     - &SELECTION '#44475A'
     - &COMMENT   '#7a7e85'
-    - &LG_GREEN     '#50FA7B'
     - &LG_ORANGE    '#FFB86C'
     - &LG_PINK      '#FF79C6'
     - &RED          '#ad3e3b'
@@ -196,7 +195,7 @@ colors:
   editor.foldBackground: !alpha [ *BGDark, 80 ]                                 # Background color for folded ranges
 
   editor.wordHighlightBackground: !alpha [ *PURPLE, 50 ]                          # Background color of a symbol during read-access, for example when reading a variable
-  editor.wordHighlightStrongBackground: !alpha [ *LG_GREEN, 50 ]                   # Background color of a symbol during write-access, for example when writing to a variable
+  editor.wordHighlightStrongBackground: !alpha [ *GREEN, 50 ]                   # Background color of a symbol during write-access, for example when writing to a variable
 
   editor.findMatchBackground: !alpha [ *LG_ORANGE, 80 ]
   editor.findMatchHighlightBackground: !alpha [ *WHITE, 40 ]                    # Color of the other search matches
@@ -213,7 +212,7 @@ colors:
   editor.snippetTabstopHighlightBackground: *BG                                 # Highlight background color of a snippet tabstop
   editor.snippetTabstopHighlightBorder: *COMMENT                                # Highlight border color of a snippet tabstop
   editor.snippetFinalTabstopHighlightBackground: *BG                            # Highlight background color of the final tabstop of a snippet
-  editor.snippetFinalTabstopHighlightBorder: *LG_GREEN                             # Highlight border color of the final tabstop of a snippet
+  editor.snippetFinalTabstopHighlightBorder: *GREEN                             # Highlight border color of the final tabstop of a snippet
 
   editorWhitespace.foreground: *NonText                                         # Color of whitespace characters in the editor
   editorIndentGuide.background: *NonText                                        # Color of the editor indentation guides
@@ -241,9 +240,9 @@ colors:
   editorOverviewRuler.rangeHighlightForeground:
   editorOverviewRuler.selectionHighlightForeground: *LG_ORANGE
   editorOverviewRuler.wordHighlightForeground: *PURPLE
-  editorOverviewRuler.wordHighlightStrongForeground: *LG_GREEN
+  editorOverviewRuler.wordHighlightStrongForeground: *GREEN
   editorOverviewRuler.modifiedForeground: !alpha [ *PURPLE, 80 ]
-  editorOverviewRuler.addedForeground:    !alpha [ *LG_GREEN,  80 ]
+  editorOverviewRuler.addedForeground:    !alpha [ *GREEN,  80 ]
   editorOverviewRuler.deletedForeground:  !alpha [ *RED,    80 ]
   editorOverviewRuler.errorForeground:    !alpha [ *RED,    80 ]
   editorOverviewRuler.warningForeground:  !alpha [ *LG_ORANGE, 80 ]
@@ -256,18 +255,18 @@ colors:
 
   editorGutter.background:                                                      # Background color of the editor gutter
   editorGutter.modifiedBackground: !alpha [ *PURPLE, 80 ]                         # Editor gutter background color for lines that are modified
-  editorGutter.addedBackground:    !alpha [ *LG_GREEN,  80 ]                       # Editor gutter background color for lines that are added
+  editorGutter.addedBackground:    !alpha [ *GREEN,  80 ]                       # Editor gutter background color for lines that are added
   editorGutter.deletedBackground:  !alpha [ *RED,    80 ]                       # Editor gutter background color for lines that are deleted
 
   # Explorer Colors
   gitDecoration.modifiedResourceForeground: *PURPLE
   gitDecoration.deletedResourceForeground: *RED
-  gitDecoration.untrackedResourceForeground: *LG_GREEN
+  gitDecoration.untrackedResourceForeground: *GREEN
   gitDecoration.ignoredResourceForeground: *COMMENT
   gitDecoration.conflictingResourceForeground: *LG_ORANGE
 
   # Diff Editor Colors
-  diffEditor.insertedTextBackground: !alpha [ *LG_GREEN, 20 ]                      # Background color for inserted text
+  diffEditor.insertedTextBackground: !alpha [ *GREEN, 20 ]                      # Background color for inserted text
   diffEditor.insertedTextBorder:                                                # Outline color for inserted text
   diffEditor.removedTextBackground: !alpha [ *RED, 50 ]                         # Background color for removed text
   diffEditor.removedTextBorder:                                                 # Outline color for removed text
@@ -309,12 +308,12 @@ colors:
   peekViewTitleLabel.foreground: *FG                                            # Color of the peek view title
 
   # Merge Conflicts
-  merge.currentHeaderBackground: !alpha [ *LG_GREEN, 90 ]                          # Current header background in inline merge conflicts
+  merge.currentHeaderBackground: !alpha [ *GREEN, 90 ]                          # Current header background in inline merge conflicts
   merge.currentContentBackground:                                               # Current content background in inline merge conflicts
   merge.incomingHeaderBackground: !alpha [ *ORANGE, 90 ]                        # Incoming header background in inline merge conflicts
   merge.incomingContentBackground:                                              # Incoming content background in inline merge conflicts
   merge.border:                                                                 # Border color on headers and the splitter in inline merge conflicts
-  editorOverviewRuler.currentContentForeground: *LG_GREEN                          # Current overview ruler foreground for inline merge conflicts
+  editorOverviewRuler.currentContentForeground: *GREEN                          # Current overview ruler foreground for inline merge conflicts
   editorOverviewRuler.incomingContentForeground: *ORANGE                        # Incoming overview ruler foreground for inline merge conflicts
 
   # Panel Colors
@@ -347,8 +346,8 @@ colors:
 
   # Extensions
   extensionButton.prominentForeground: *FG                                      # Extension view button foreground color (for example Install button)
-  extensionButton.prominentBackground: !alpha [ *LG_GREEN, 90 ]                    # Extension view button background color
-  extensionButton.prominentHoverBackground: !alpha [ *LG_GREEN, 60 ]               # Extension view button background hover color
+  extensionButton.prominentBackground: !alpha [ *GREEN, 90 ]                    # Extension view button background color
+  extensionButton.prominentHoverBackground: !alpha [ *GREEN, 60 ]               # Extension view button background hover color
 
   # Quick Picker
   pickerGroup.border: *ORANGE                                                   # Quick picker (Quick Open) color for grouping borders
@@ -728,14 +727,14 @@ tokenColors:
     - meta.decorator variable.other.readwrite
     - meta.decorator variable.other.property
     settings:
-      foreground: *LG_GREEN
+      foreground: *GREEN
       fontStyle: italic
 
   - name: Decorator Objects
     scope:
       - meta.decorator variable.other.object
     settings:
-      foreground: *LG_GREEN
+      foreground: *GREEN
 
 # =============================================================================
 # Keywords
@@ -1018,7 +1017,7 @@ tokenColors:
     scope:
     - meta.assertion.look-ahead.regexp
     settings:
-      foreground: *LG_GREEN
+      foreground: *GREEN
 
 
 # =============================================================================
