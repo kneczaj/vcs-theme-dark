@@ -466,10 +466,10 @@ tokenColors:
 
   - name: Bold markup
     scope:
-    - markup.bold
+    - punctuation.definition.bold.markdown
     settings:
       fontStyle: bold
-      foreground: *LG_ORANGE
+      foreground: *ORANGE
 
   - name: Markup headings
     scope:
