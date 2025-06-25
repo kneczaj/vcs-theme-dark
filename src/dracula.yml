@@ -765,6 +765,7 @@ tokenColors:
     scope:
     - support.type.builtin
     - support.type.primitive
+    - constant.language
     settings:
       fontStyle: regular
       foreground: *ORANGE
