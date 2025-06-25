@@ -863,8 +863,8 @@ tokenColors:
     scope:
     - variable.other.alias.yaml
     settings:
-      fontStyle: italic underline
-      foreground: *LG_GREEN
+      fontStyle: italic
+      foreground: *ORANGE
 
 # =============================================================================
 # Storage
