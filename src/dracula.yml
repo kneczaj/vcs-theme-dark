@@ -22,6 +22,7 @@ dracula:
     - &DARK_GREEN   '#507874'
     - &WARNING      '#f2c55c'
     - &BLACK        '#000000'
+    - &CYAN         '#2fbaa3'
   ansi:
     - &COLOR0        '#21222C'
     - &COLOR1        '#FF5555'
@@ -741,6 +742,17 @@ tokenColors:
     - meta.selector
     settings:
       foreground: *LG_PINK
+
+# =============================================================================
+# JSX
+# =============================================================================
+
+  - name: JSX components
+    scope:
+    - support.class.component
+    settings:
+      foreground: *CYAN
+      fontStyle: 'normal'
 
 # =============================================================================
 # Language Built-ins
