@@ -487,11 +487,13 @@ tokenColors:
 
   - name: Bullets, lists (prose)
     scope:
-    - beginning.punctuation.definition.list.markdown
-    - beginning.punctuation.definition.quote.markdown
+    - punctuation.definition.list
+    - punctuation.definition.quote.markdown
     - punctuation.definition.link.restructuredtext
+    - punctuation.definition.raw.markdown
+    - punctuation.definition.markdown
     settings:
-      foreground: *PURPLE
+      foreground: *ORANGE
 
   - name: Inline code (prose)
     scope:
@@ -535,9 +537,9 @@ tokenColors:
     scope:
     - fenced_code.block.language
     - markup.raw.inner.restructuredtext
-    - markup.fenced_code.block.markdown punctuation.definition.markdown
+    - markup.fenced_code.block.markdown
     settings:
-      foreground: *LG_GREEN
+      foreground: *GREEN
 
   - name: Prose constants
     scope:
