@@ -869,7 +869,7 @@ tokenColors:
     - source.groovy storage.type.def
     settings:
       fontStyle: regular
-      foreground: *LG_PINK
+      foreground: *ORANGE
 
   - name: Types
     scope:
