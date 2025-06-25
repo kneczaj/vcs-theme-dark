@@ -452,6 +452,12 @@ tokenColors:
   # Markdown / RST / Prose
   # ======================
 
+  - name: header
+    scope:
+    - entity.name.section.markdown
+    settings:
+      fontStyle: italic
+
   - name: Underlined markup
     scope:
     - markup.underline
@@ -886,6 +892,7 @@ tokenColors:
     scope:
     - entity.name.function.target.makefile
     - entity.name.section.toml
+    - entity.name.section.markdown
     - entity.name.tag.yaml
     - variable.other.key.toml
     settings:
