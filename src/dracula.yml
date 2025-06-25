@@ -16,12 +16,12 @@ dracula:
     - &LG_PINK      '#FF79C6'
     - &LG_PURPLE    '#BD93F9'
     - &LG_RED       '#FF5555'
-    - &LG_YELLOW    '#F1FA8C'
     - &PURPLE       '#c77ebb'
+    - &GREEN        '#6aab73'
   ansi:
     - &COLOR0        '#21222C'
     - &COLOR1        '#FF5555'
-    - &COLOR2        '#50FA7B'
+    - &COLOR2        '#6aab73'
     - &COLOR3        '#F1FA8C'
     - &COLOR4        '#BD93F9'
     - &COLOR5        '#FF79C6'
@@ -293,11 +293,11 @@ colors:
   peekView.border: *SELECTION                                                   # Color of the peek view borders and arrow
   peekViewEditor.background: *BG                                                # Background color of the peek view editor
   peekViewEditorGutter.background:                                              # Background color of the gutter in the peek view editor
-  peekViewEditor.matchHighlightBackground: !alpha [ *LG_YELLOW, 80 ]               # Match highlight color in the peek view editor
+  peekViewEditor.matchHighlightBackground: !alpha [ *GREEN, 80 ]               # Match highlight color in the peek view editor
   peekViewResult.background: *BGDark                                            # Background color of the peek view result list
   peekViewResult.fileForeground: *FG                                            # Foreground color for file nodes in the peek view result list
   peekViewResult.lineForeground: *FG                                            # Foreground color for line nodes in the peek view result list
-  peekViewResult.matchHighlightBackground: !alpha [ *LG_YELLOW, 80 ]               # Match highlight color in the peek view result list
+  peekViewResult.matchHighlightBackground: !alpha [ *GREEN, 80 ]               # Match highlight color in the peek view result list
   peekViewResult.selectionBackground: *SELECTION                                # Background color of the selected entry in the peek view result list
   peekViewResult.selectionForeground: *FG                                       # Foreground color of the selected entry in the peek view result list
   peekViewTitle.background: *BGDarker                                           # Background color of the peek view title area
@@ -440,7 +440,7 @@ tokenColors:
   - scope:
     - entity.name.filename
     settings:
-      foreground: *LG_YELLOW
+      foreground: *GREEN
   - scope:
     - markup.error
     settings:
@@ -473,7 +473,7 @@ tokenColors:
     scope:
     - markup.italic
     settings:
-      foreground: *LG_YELLOW
+      foreground: *GREEN
       fontStyle: italic
 
   - name: Bullets, lists (prose)
@@ -512,7 +512,7 @@ tokenColors:
     - entity.name.directive.restructuredtext
     - markup.quote
     settings:
-      foreground: *LG_YELLOW
+      foreground: *GREEN
       fontStyle: italic
 
   - name: Horizontal rule (prose)
@@ -554,7 +554,7 @@ tokenColors:
     - markup.quote.markdown meta.paragraph.markdown punctuation.definition.string.begin
     - markup.quote.markdown meta.paragraph.markdown punctuation.definition.string.end
     settings:
-      foreground: *LG_YELLOW
+      foreground: *GREEN
 
 # =============================================================================
 # Classes
@@ -925,7 +925,7 @@ tokenColors:
     - constant.other.character-class.set.regexp
     - constant.character.escape.backslash.regexp
     settings:
-      foreground: *LG_YELLOW
+      foreground: *GREEN
 
   - name: Non-capture operators
     scope:
@@ -975,7 +975,7 @@ tokenColors:
     scope:
     - string
     settings:
-      foreground: *LG_YELLOW
+      foreground: *GREEN
 
   - name: String quotes (temporary vscode fix)
     scope:
@@ -1045,7 +1045,7 @@ tokenColors:
     scope:
     - meta.selectionset.graphql variable
     settings:
-      foreground: *LG_YELLOW
+      foreground: *GREEN
 
   - name: GraphQL function arguments
     scope:
@@ -1099,13 +1099,13 @@ tokenColors:
     scope:
     - meta.scope.prerequisites.makefile
     settings:
-      foreground: *LG_YELLOW
+      foreground: *GREEN
 
   - name: SCSS attibute selector strings
     scope:
       - meta.attribute-selector.scss
     settings:
-      foreground: *LG_YELLOW
+      foreground: *GREEN
 
   - name: SCSS attribute selector brackets
     scope:
@@ -1131,5 +1131,5 @@ tokenColors:
     scope:
       - log.warning
     settings:
-      foreground: *LG_YELLOW
+      foreground: *GREEN
       fontStyle: bold
