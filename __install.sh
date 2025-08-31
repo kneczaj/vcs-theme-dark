@@ -16,9 +16,9 @@ echo "Installing VCS dark theme from kneczaj..."
 
 themeDir=$(realpath "./")
 
-echo "Linking \"$themeDir\" to \"$VCS_EXTENSIONS_DIR/theme-dark\""
+echo "Linking \"$themeDir\" to \"$VCS_EXTENSIONS_DIR/kneczaj-theme-dark\""
 
-ln -s "$themeDir" "$VCS_EXTENSIONS_DIR/theme-dark"
+ln -s "$themeDir" "$VCS_EXTENSIONS_DIR/kneczaj-theme-dark"
 
 cd "$SCRIPT_DIR"
 npm install

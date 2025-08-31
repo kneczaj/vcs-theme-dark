@@ -3,9 +3,9 @@ name: Dark theme by KNeczaj
 author: Zeno Rocha, Kamil Neczaj
 maintainers:
   - Kamil Neczaj <kneczaj@gmail.com>
-semanticClass: theme.dracula
+semanticClass: theme.dark
 semanticHighlighting: true
-dracula:
+vars:
   base:
     - &BG        '#282A36'
     - &FG        '#bcbec4'

@@ -4,7 +4,7 @@
 
 ## Install
 
-All instructions can be found at [draculatheme.com/visual-studio-code](https://draculatheme.com/visual-studio-code).
+All instructions can be found at INSTALL.md.
 
 ## Team
 
