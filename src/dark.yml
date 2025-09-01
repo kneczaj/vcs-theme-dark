@@ -146,14 +146,14 @@ colors:
   list.focusForeground:                                                         # List/Tree foreground color for the focused item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not
 
   # Activity Bar
-  activityBar.background: *BGLight                                              # Activity Bar background color
+  activityBar.background: *BGDark                                              # Activity Bar background color
   activityBar.inactiveForeground: *COMMENT                                      # Activity bar item foreground color when it is inactive
   activityBar.dropBackground:                                                   # Drag and drop feedback color for the Activity Bar items
   activityBar.foreground: *FG                                                   # Activity bar foreground color (for example used for the icons)
-  activityBar.border:                                                           # Activity Bar border color with the Side Bar
+  activityBar.border: *BGDarker                                                          # Activity Bar border color with the Side Bar
   activityBar.activeBorder: !alpha [*PURPLE, 80]                                  # Activity Bar indicator color
   activityBar.activeBackground: !alpha [*ORANGE, 10]                            # Activity Bar indicator background color
-  activityBarBadge.background: *PURPLE                                            # Activity notification badge background color
+  activityBarBadge.background: *BLUE_VIVID                                      # Activity notification badge background color
   activityBarBadge.foreground: *FG                                              # Activity notification badge foreground color
 
   # Side Bar
