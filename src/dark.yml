@@ -7,7 +7,7 @@ semanticClass: theme.dark
 semanticHighlighting: true
 vars:
   base:
-    - &BG        '#282A36'
+    - &BG        '#2b2d30'
     - &FG        '#bbbdc0'
     - &FGLight   '#d6d8db'
     - &SELECTION '#44475A'
