@@ -9,6 +9,7 @@ vars:
   base:
     - &BG        '#282A36'
     - &FG        '#bcbec4'
+    - &FGLight   '#d6d8db'
     - &SELECTION '#44475A'
     - &COMMENT   '#7a7e85'
     - &RED          '#db5c5c'
@@ -17,6 +18,8 @@ vars:
     - &ORANGE       '#cf8e6d'
     - &BLUE         '#56a8f5'
     - &BLUE_LIGHT   '#2aacb8'
+    - &BLUE_VIVID   '#3574f0'
+    - &GREY         '#5a5d63'
     - &DARK_GREEN   '#507874'
     - &WARNING      '#f2c55c'
     - &CYAN         '#2fbaa3'
@@ -133,7 +136,7 @@ colors:
   list.activeSelectionForeground: *FG                                           # List/Tree foreground color for the selected item when the list/tree is active
   list.dropBackground: *SELECTION                                               # List/Tree drag and drop background when moving items around using the mouse
   list.focusBackground: *LineHighlight                                          # List/Tree background color for the focused item when the list/tree is active
-  list.highlightForeground: *PURPLE                                               # List/Tree foreground color of the match highlights when searching inside the list/tree
+  list.highlightForeground: *FGLight                                            # List/Tree foreground color of the match highlights when searching inside the list/tree
   list.hoverBackground: *LineHighlight                                          # List/Tree background when hovering over items using the mouse
   list.inactiveSelectionBackground: *LineHighlight                              # List/Tree background color for the selected item when the list/tree is inactive
   list.inactiveSelectionForeground:                                             # List/Tree foreground color for the selected item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not
@@ -170,13 +173,13 @@ colors:
   editorGroupHeader.tabsBackground: *BGDarker                                   # Background color of the Tabs container
   editorGroupHeader.tabsBorder:                                                 # Border color of the editor group title header when tabs are enabled. Editor groups are the containers of editors
   tab.activeBackground: *BG                                                     # Active Tab background color
-  tab.activeForeground: *FG                                                     # Active Tab foreground color in an active group
+  tab.activeForeground: *FGLight                                                # Active Tab foreground color in an active group
   tab.border: *BGDarker                                                         # Border to separate Tabs from each other
-  tab.activeBorderTop: !alpha [*PURPLE, 80]                                       # A border drawn to the top of the active tab
-  tab.activeBorder:                                                             # A border drawn to the bottom of the active tab
-  tab.unfocusedActiveBorder:                                                    # A border drawn to the bottom of the active tab in an editor group that is not focused
+  tab.activeBorderTop:                                                          # A border drawn to the top of the active tab
+  tab.activeBorder: *BLUE_VIVID                                                 # A border drawn to the bottom of the active tab
+  tab.unfocusedActiveBorder: *GREY                                              # A border drawn to the bottom of the active tab in an editor group that is not focused
   tab.inactiveBackground: *BGDark                                               # Inactive Tab background color
-  tab.inactiveForeground: *COMMENT                                              # Inactive Tab foreground color in an active group
+  tab.inactiveForeground: *FG                                              # Inactive Tab foreground color in an active group
   tab.unfocusedActiveForeground:                                                # Active tab foreground color in an inactive editor group
   tab.unfocusedInactiveForeground:                                              # Inactive tab foreground color in an inactive editor group
 
@@ -256,7 +259,7 @@ colors:
   editorGutter.deletedBackground:  !alpha [ *RED,    80 ]                       # Editor gutter background color for lines that are deleted
 
   # Explorer Colors
-  gitDecoration.modifiedResourceForeground: *PURPLE
+  gitDecoration.modifiedResourceForeground: *ORANGE
   gitDecoration.deletedResourceForeground: *RED
   gitDecoration.untrackedResourceForeground: *GREEN
   gitDecoration.ignoredResourceForeground: *COMMENT
