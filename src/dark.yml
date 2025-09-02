@@ -604,7 +604,6 @@ tokenColors:
     scope:
     - entity.other.inherited-class
     settings:
-      fontStyle: italic
       foreground: *PURPLE
 
 # =============================================================================
