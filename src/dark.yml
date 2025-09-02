@@ -13,6 +13,8 @@ vars:
     - &FGDark    '#4b5059'
     - &SELECTION '#214282'
     - &SELECTIONEditorLine '#26282e'
+    - &CODEHighlight '#373b39'
+    - &HIGHLIGHSearchMatch '#165f70'
     - &COMMENT   '#7a7e85'
     - &RED          '#db5c5c'
     - &PURPLE       '#c77ebb'
@@ -196,14 +198,16 @@ colors:
   editor.inactiveSelectionBackground:                                           # Color of the selection in an inactive editor
   editor.foldBackground: !alpha [ *BGDark, 80 ]                                 # Background color for folded ranges
 
-  editor.wordHighlightBackground: !alpha [ *PURPLE, 50 ]                          # Background color of a symbol during read-access, for example when reading a variable
-  editor.wordHighlightStrongBackground: !alpha [ *GREEN, 50 ]                   # Background color of a symbol during write-access, for example when writing to a variable
+  editor.wordHighlightBackground: *CODEHighlight                                # Background color of a symbol during read-access, for example when reading a variable
+  editor.wordHighlightStrongBackground: *SELECTION                              # Background color of a symbol during write-access, for example when writing to a variable
 
-  editor.findMatchBackground: !alpha [ *ORANGE, 80 ]
-  editor.findMatchHighlightBackground: !alpha [ *WHITE, 40 ]                    # Color of the other search matches
-  editor.findRangeHighlightBackground: *LineHighlight                           # Color the range limiting the search
+  editor.findMatchBackground: *SELECTION
+  editor.findMatchBorder: *FGLight
+  editor.findMatchHighlightBackground: *CODEHighlight                    # Color of the other search matches
+  editor.findMatchHighlightBorder: *HIGHLIGHSearchMatch
+  editor.findRangeHighlightBackground: !alpha [*CODEHighlight, 50]              # Color the range limiting the search
 
-  editor.hoverHighlightBackground: !alpha [*PURPLE, 50]                           # Highlight below the word for which a hover is shown
+  editor.hoverHighlightBackground: !alpha [*PURPLE, 50]                         # Highlight below the word for which a hover is shown
 
   editor.lineHighlightBackground: *SELECTIONEditorLine                          # Background color for the highlight of line at the cursor position
   editor.lineHighlightBorder:                                                   # Background color for the border around the line at the cursor position
