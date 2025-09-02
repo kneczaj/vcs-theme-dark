@@ -210,12 +210,12 @@ colors:
   editor.findMatchHighlightBorder: *HIGHLIGHSearchMatch
   editor.findRangeHighlightBackground: !alpha [*CODEHighlight, 50]              # Color the range limiting the search
 
-  editor.hoverHighlightBackground: !alpha [*PURPLE, 50]                         # Highlight below the word for which a hover is shown
+  editor.hoverHighlightBackground: !alpha [*CODEHighlight, 50]                         # Highlight below the word for which a hover is shown
 
   editor.lineHighlightBackground: *SELECTIONEditorLine                          # Background color for the highlight of line at the cursor position
   editor.lineHighlightBorder:                                                   # Background color for the border around the line at the cursor position
 
-  editorLink.activeForeground: *PURPLE                                            # Color of active links
+  editorLink.activeForeground: *BLUE_VIVID                                            # Color of active links
   editor.rangeHighlightBackground: !alpha [ *ORANGE, 15 ]                       # Background color of highlighted ranges, like by Quick Open and Find features
 
   editor.snippetTabstopHighlightBackground: *BG                                 # Highlight background color of a snippet tabstop
