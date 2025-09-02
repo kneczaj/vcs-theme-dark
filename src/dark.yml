@@ -10,6 +10,7 @@ vars:
     - &BG        '#2b2d30'
     - &FG        '#bbbdc0'
     - &FGLight   '#d6d8db'
+    - &FGDark    '#4b5059'
     - &SELECTION '#44475A'
     - &COMMENT   '#7a7e85'
     - &RED          '#db5c5c'
@@ -186,7 +187,7 @@ colors:
   # Editor Colors
   editor.foreground: *FG
   editor.background: *BG
-  editorLineNumber.foreground: *COMMENT
+  editorLineNumber.foreground: *FGDark
   editorCursor.foreground:
 
   editor.selectionBackground: *SELECTION                                        # Color of the editor selection
