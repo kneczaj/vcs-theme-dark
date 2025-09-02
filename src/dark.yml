@@ -583,7 +583,6 @@ tokenColors:
 
   - name: User-defined class names
     scope:
-    - entity.name.type.class
     - entity.name.class
     settings:
       foreground: *PURPLE
