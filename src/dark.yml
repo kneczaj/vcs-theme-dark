@@ -82,7 +82,7 @@ colors:
 
   # Base Colors
   focusBorder: *COMMENT                                                         # Overall border color for focused elements. This color is only used if not overridden by a component
-  foreground: *FG                                                               # Overall foreground color. This color is only used if not overridden by a component
+  foreground: *FGLight                                                          # Overall foreground color. This color is only used if not overridden by a component
   widget.shadow:                                                                # Shadow color of widgets such as Find/Replace inside the editor
   selection.background: *NAVY                                                 # Background color of text selections in the workbench (for input fields or text areas, does not apply to selections within the editor and the terminal)
   errorForeground: *RED                                                         # Overall foreground color for error messages (this color is only used if not overridden by a component)
