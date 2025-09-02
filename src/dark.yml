@@ -28,6 +28,7 @@ vars:
     - &WARNING      '#f2c55c'
     - &CYAN         '#2fbaa3'
     - &YELLOW       '#d5b778'
+    - &YELLOW_VIVID '#e8be6a'
     - &NAVY         '#2e436e'
   ansi:
     - &COLOR0        '#21222C'
@@ -924,9 +925,9 @@ tokenColors:
   - name: YAML aliases
     scope:
     - variable.other.alias.yaml
+    - variable.other.anchor.yaml
     settings:
-      fontStyle: italic
-      foreground: *ORANGE
+      foreground: *YELLOW_VIVID
 
 # =============================================================================
 # Storage
@@ -1185,6 +1186,13 @@ tokenColors:
     scope:
       - punctuation.definition.attribute-selector.end.bracket.square.scss
       - punctuation.definition.attribute-selector.begin.bracket.square.scss
+    settings:
+      foreground: *FG
+
+  - name: yaml asterix
+    scope:
+      - punctuation.definition.alias.yaml
+      - punctuation.definition.anchor.yaml
     settings:
       foreground: *FG
 
