@@ -261,9 +261,9 @@ colors:
   editorWarning.border:                                                         # Border color of warning squigglies in the editor
 
   editorGutter.background:                                                      # Background color of the editor gutter
-  editorGutter.modifiedBackground: !alpha [ *PURPLE, 80 ]                         # Editor gutter background color for lines that are modified
-  editorGutter.addedBackground:    !alpha [ *GREEN,  80 ]                       # Editor gutter background color for lines that are added
-  editorGutter.deletedBackground:  !alpha [ *RED,    80 ]                       # Editor gutter background color for lines that are deleted
+  editorGutter.modifiedBackground: *SELECTION                                   # Editor gutter background color for lines that are modified
+  editorGutter.addedBackground:    *GREEN                                       # Editor gutter background color for lines that are added
+  editorGutter.deletedBackground:  *RED                       # Editor gutter background color for lines that are deleted
 
   # Explorer Colors
   gitDecoration.modifiedResourceForeground: *BLUE
