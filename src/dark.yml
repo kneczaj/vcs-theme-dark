@@ -12,6 +12,7 @@ vars:
     - &FGLight   '#d6d8db'
     - &FGDark    '#4b5059'
     - &SELECTION '#214282'
+    - &SELECTIONEditorLine '#26282e'
     - &COMMENT   '#7a7e85'
     - &RED          '#db5c5c'
     - &PURPLE       '#c77ebb'
@@ -204,8 +205,8 @@ colors:
 
   editor.hoverHighlightBackground: !alpha [*PURPLE, 50]                           # Highlight below the word for which a hover is shown
 
-  editor.lineHighlightBackground:                                               # Background color for the highlight of line at the cursor position
-  editor.lineHighlightBorder: *SELECTION                                        # Background color for the border around the line at the cursor position
+  editor.lineHighlightBackground: *SELECTIONEditorLine                          # Background color for the highlight of line at the cursor position
+  editor.lineHighlightBorder:                                                   # Background color for the border around the line at the cursor position
 
   editorLink.activeForeground: *PURPLE                                            # Color of active links
   editor.rangeHighlightBackground: !alpha [ *ORANGE, 15 ]                       # Background color of highlighted ranges, like by Quick Open and Find features
