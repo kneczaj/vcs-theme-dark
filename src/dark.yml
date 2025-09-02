@@ -136,7 +136,7 @@ colors:
   badge.background: *SELECTION                                                  # Badge background color
 
   # Progress Bar
-  progressBar.background: *PURPLE                                                 # Background color of the progress bar shown for long running operations
+  progressBar.background: *SELECTION                                                 # Background color of the progress bar shown for long running operations
 
   # List & Trees
   list.activeSelectionBackground: *NAVY                                    # List/Tree background color for the selected item when the list/tree is active
