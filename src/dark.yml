@@ -147,7 +147,7 @@ colors:
 
   # Activity Bar
   activityBar.background: *BGDark                                              # Activity Bar background color
-  activityBar.inactiveForeground: *COMMENT                                      # Activity bar item foreground color when it is inactive
+  activityBar.inactiveForeground: *FGLight                                      # Activity bar item foreground color when it is inactive
   activityBar.dropBackground:                                                   # Drag and drop feedback color for the Activity Bar items
   activityBar.foreground: *FG                                                   # Activity bar foreground color (for example used for the icons)
   activityBar.border: *BGDarker                                                          # Activity Bar border color with the Side Bar
