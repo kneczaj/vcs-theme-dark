@@ -202,7 +202,7 @@ colors:
   editor.foldBackground: !alpha [ *BGDark, 80 ]                                 # Background color for folded ranges
 
   editor.wordHighlightBackground: *CODEHighlight                                # Background color of a symbol during read-access, for example when reading a variable
-  editor.wordHighlightStrongBackground: *SELECTION                              # Background color of a symbol during write-access, for example when writing to a variable
+  editor.wordHighlightStrongBackground: *CODEHighlight                          # Background color of a symbol during write-access, for example when writing to a variable
 
   editor.findMatchBackground: *SELECTION
   editor.findMatchBorder: *FGLight
