@@ -7,14 +7,14 @@ set +o allexport
 
 set -e
 
-if [ -d "$VCS_EXTENSIONS_DIR" ]; then
+if [ -d "$VCS_EXTENSIONS_DIR/kneczaj-theme-dark" ]; then
     echo "The VCS dark theme seems to be already installed. Skipping."
     exit 0
 fi
 
 echo "Installing VCS dark theme from kneczaj..."
 
-themeDir=$(realpath "./")
+themeDir=$(realpath "${SCRIPT_DIR}")
 
 echo "Linking \"$themeDir\" to \"$VCS_EXTENSIONS_DIR/kneczaj-theme-dark\""
 
