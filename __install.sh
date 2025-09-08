@@ -8,17 +8,26 @@ set +o allexport
 set -e
 
 if [ -d "$VCS_EXTENSIONS_DIR/kneczaj-theme-dark" ]; then
+    echo "The VCS dark theme dir exists. Skipping."
+    exit 0
+fi
+
+if [ -L "$VCS_EXTENSIONS_DIR/kneczaj-theme-dark" ]; then
     echo "The VCS dark theme seems to be already installed. Skipping."
     exit 0
 fi
 
 echo "Installing VCS dark theme from kneczaj..."
 
-themeDir=$(realpath "${SCRIPT_DIR}")
+dir=$(realpath "${SCRIPT_DIR}")
+target="${VCS_EXTENSIONS_DIR}/kneczaj-theme-dark"
+parentdir="$(dirname "$target")"
+echo "$parentdir"
+mkdir -p "${parentdir}"
 
-echo "Linking \"$themeDir\" to \"$VCS_EXTENSIONS_DIR/kneczaj-theme-dark\""
+echo "Linking \"$dir\" to \"$target\""
 
-ln -s "$themeDir" "$VCS_EXTENSIONS_DIR/kneczaj-theme-dark"
+ln -s "$dir" "$target"
 
 cd "$SCRIPT_DIR"
 npm install
