@@ -1121,6 +1121,7 @@ tokenColors:
     - punctuation.section.bracket.curly.variable.begin.shell variable.parameter.positional.shell
     - punctuation.section.bracket.curly.variable.end.shell variable.parameter.positional.shell
     - punctuation.definition.variable.shell variable.parameter.positional.shell
+    - punctuation.definition.subshell.single.shell
     settings:
       foreground: *ORANGE
 
@@ -1135,6 +1136,13 @@ tokenColors:
     - support.function.builtin.shell
     settings:
       foreground: *ORANGE
+
+  - name: Shebang
+    scope:
+    - meta.shebang.shell
+    settings:
+      foreground: *FG
+      fontStyle: bold
 
   # GraphQL
   # =======
