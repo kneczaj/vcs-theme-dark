@@ -816,7 +816,6 @@ tokenColors:
 
   - name: Built-in functions / properties
     scope:
-    - support.function
     - support.type.property-name
     settings:
       fontStyle: regular
