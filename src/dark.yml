@@ -1106,6 +1106,30 @@ tokenColors:
 # Language Extensions / Edge Cases
 # =============================================================================
 
+  # Shell
+  # =====
+
+  - name: Positional parameters
+    scope:
+    - variable.parameter.positional.shell
+    settings:
+      foreground: *BLUE_LIGHT
+
+  - name: Curly braces
+    scope:
+    - punctuation.definition.variable.shell
+    - punctuation.section.bracket.curly.variable.begin.shell variable.parameter.positional.shell
+    - punctuation.section.bracket.curly.variable.end.shell variable.parameter.positional.shell
+    - punctuation.definition.variable.shell variable.parameter.positional.shell
+    settings:
+      foreground: *ORANGE
+
+  - name: Args
+    scope:
+    - string.unquoted.argument.shell
+    settings:
+      foreground: *FG
+
   # GraphQL
   # =======
   - name: GraphQL keys
