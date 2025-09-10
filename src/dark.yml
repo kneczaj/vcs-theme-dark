@@ -1130,6 +1130,12 @@ tokenColors:
     settings:
       foreground: *FG
 
+  - name: Built-ins
+    scope:
+    - support.function.builtin.shell
+    settings:
+      foreground: *ORANGE
+
   # GraphQL
   # =======
   - name: GraphQL keys
