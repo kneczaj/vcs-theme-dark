@@ -1148,14 +1148,6 @@ tokenColors:
     settings:
       foreground: *FG
 
-  # This is set to conform to the standard of coloring langage constants purple.
-  # In this case, this colors "$?", "$@", "$*", "$1", etc..
-  - name: Shell variables prefixed with "$" (edge case)
-    scope:
-    - source.shell variable.other
-    settings:
-      foreground: *ORANGE
-
   - name: Powershell constants mistakenly scoped to `support`, rather than `constant` (edge)
     scope:
     - support.constant
