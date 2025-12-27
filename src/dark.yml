@@ -753,10 +753,12 @@ tokenColors:
     settings:
       foreground: *FG
 
-  - name: Keyword "new"
+  - name: Keyword "new", "typeof", "instanceof"
     scope:
     - keyword.control.new
     - keyword.operator.new
+    - keyword.operator.expression.typeof
+    - keyword.operator.expression.instanceof
     settings:
       fontStyle: bold
       foreground: *ORANGE
