@@ -1091,6 +1091,7 @@ tokenColors:
   - name: Destructuring / aliasing variable name (RHS)
     scope:
     - meta.import variable.other.readwrite.alias                             # Module import aliasing (alias name)
+    - constant.language.import-export-all
     - meta.export variable.other.readwrite.alias                             # Module import aliasing (alias name)
     - meta.variable.assignment.destructured.object.coffee variable variable  # Object destructuring variable (coffeescript)
     settings:
