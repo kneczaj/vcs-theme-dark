@@ -1069,6 +1069,7 @@ tokenColors:
     scope:
     - variable.other.property
     - support.variable.property
+    - support.constant.property
     - constant.other.key.perl     # Perl edge case
     settings:
       foreground: *PURPLE
