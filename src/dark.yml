@@ -14,6 +14,7 @@ vars:
     - &SELECTION '#214282'
     - &SELECTIONEditorLine '#26282e'
     - &CODEHighlight '#373b39'
+    - &WORDHighlight '#050505'
     - &HIGHLIGHSearchMatch '#165f70'
     - &COMMENT   '#7a7e85'
     - &DOCSTRING '#67a37d'
@@ -201,8 +202,8 @@ colors:
   editor.inactiveSelectionBackground:                                           # Color of the selection in an inactive editor
   editor.foldBackground: !alpha [ *BGDark, 80 ]                                 # Background color for folded ranges
 
-  editor.wordHighlightBackground: *CODEHighlight                                # Background color of a symbol during read-access, for example when reading a variable
-  editor.wordHighlightStrongBackground: *CODEHighlight                          # Background color of a symbol during write-access, for example when writing to a variable
+  editor.wordHighlightBackground: !alpha [*WORDHighlight, 20]                                # Background color of a symbol during read-access, for example when reading a variable
+  editor.wordHighlightStrongBackground: !alpha [*WORDHighlight, 20]                          # Background color of a symbol during write-access, for example when writing to a variable
 
   editor.findMatchBackground: *SELECTION
   editor.findMatchBorder: *FGLight
